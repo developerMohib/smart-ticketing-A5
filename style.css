@@ -1,0 +1,12 @@
+
+
+*{
+    padding : 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1180px;
+    margin: auto;
+}
