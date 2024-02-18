@@ -12,3 +12,12 @@
     width: 1180px;
     margin: auto;
 }
+p{
+    color:#030712B3;
+}
+a{
+    color: #030712B3;
+}
+.bigDisplayMenu li a{
+    font-size: 17px;
+}
