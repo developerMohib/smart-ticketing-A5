@@ -161,12 +161,12 @@
           </div>
         </section>
 
-        <section id="#tickets" class="border-t-2 rounded-3xl border-secColor my-10">
+        <section id="tickets" class="border-t-2 rounded-3xl border-secColor my-10">
           <div class="container">
 
               <div class=" lg:w-3/5 mx-auto">
                 <h2 class="text-4xl font-bold text-center my-10">Matha-Moda Paribahan</h2>
-                <p class="mb-5 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <p class=" text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
               </div>
 
 
@@ -183,7 +183,7 @@
                       </div>
                     </div>
                     <div class="total-sit">
-                      <p class="text-priColor p-3 text-xl rounded-lg bg-[#6ee15f]"> <span> <img class="inline-block" src="./images/seat-gray.png" alt=""> </span> <span>40</span> sit left</p>
+                      <p class="text-priColor p-3 text-xl rounded-lg bg-[#6ee15f]"> <span> <img class="inline-block" src="./images/seat-gray.png" alt=""> </span> <span id="totalSeat">40</span> sit left</p>
                     </div>
                   </div>
 
@@ -221,7 +221,7 @@
 
               <!-- Select Your Seat -->
 
-                <div class="lg:grid lg:grid-cols-7 gap-10 mt-10 bg-[#edeeee] p-5">
+                <div class="lg:grid lg:grid-cols-7 gap-10 bg-[#edeeee] p-5">
 
                   <div class="left-side-obBus col-span-4 p-4 border-r-2 border-dashed border-red-300">
                     <h1 class="text-2xl font-bold ">Select Your Seat</h1>
@@ -236,45 +236,45 @@
                     <div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow mt-10">
                         <p class="font-semibold lg:text-2xl text-xl">A</p>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">A1</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >A2</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >A3</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl" >A4</button>
+                        <button id="A1" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">A1</button>
+                        <button id="A2" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >A2</button>
+                        <button id="A3" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >A3</button>
+                        <button id="A4" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl" >A4</button>
                       </div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">B</p>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">B1</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >B2</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >B3</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >B4</button>
+                        <button id="B1" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">B1</button>
+                        <button id="B2" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >B2</button>
+                        <button id="B3" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >B3</button>
+                        <button id="B4" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >B4</button>
                       </div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">C</p>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">C1</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >C2</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >C3</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >C4</button>
+                        <button id="C1" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">C1</button>
+                        <button id="C2" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >C2</button>
+                        <button id="C3" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >C3</button>
+                        <button id="C4" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >C4</button>
                       </div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">D</p>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">D1</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >D2</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >D3</button>
-                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >D4</button>
+                        <button id="D1" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">D1</button>
+                        <button id="D2" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >D2</button>
+                        <button id="D3" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >D3</button>
+                        <button id="D4" class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >D4</button>
                       </div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5 ">
                         <p class="font-semibold text-2xl">E</p>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">E1</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >E2</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >E3</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-1" >E4</button>
+                        <button id="E1" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">E1</button>
+                        <button id="E2" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >E2</button>
+                        <button id="E3" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >E3</button>
+                        <button id="E4" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-1" >E4</button>
                       </div>
                       <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">F</p>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">F1</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >F2</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >F3</button>
-                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1" >F4</button>
+                        <button id="F1" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">F1</button>
+                        <button id="F2" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >F2</button>
+                        <button id="F3" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >F3</button>
+                        <button id="F4" class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1" >F4</button>
                       </div>
                     </div>
                   </div>
@@ -298,31 +298,52 @@
                       <h2> BDT <span>500</span> </h2>
                     </div>
 
-                    <div class="">
+                    <div class="disabled:">
                       <div class=" relative">
-                        <!-- <input class="input input-bordered join-item" placeholder="Email"/>
-                        <button class="btn bg-ternaryColor join-item ">Subscribe</button> -->
                         <input type="text" placeholder="Have a coupon? " class="input w-full" />
-                        <input type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Next">
+                        <input type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Coupon">
                       </div>
                     </div>
-                    <form action="" class="form-control" >
+                    <form class="form-control" >
                       <div class="my-3">
                         <label for="name">Passenger Name</label> <br>
-                        <input required type="text" class="input w-full " placeholder="Name" name="name" id="">
+                        <input  type="text" class="input w-full " placeholder="Name" name="name" id="">
                       </div>
                       <div class="my-3">
                         <label for="number">Phone Number</label><br>
-                        <input required type="number" class="input w-full " placeholder="Number" name="number" id="">
+                        <input  type="number" class="input w-full " placeholder="Number" name="number" id="">
                       </div>
                       <div class="my-3">
                         <label for="Email">Email</label><br>
                         <input type="email" class="input w-full " placeholder="Email" name="Email" id="">
                       </div>
                       <div class="my-3">
-                        <input type="submit" class="input w-full bg-ternaryColor font-bold cursor-pointer"  value="Next">
+                        <input onclick="my_modal_5.showModal()" type="submit" class="input w-full bg-ternaryColor font-bold cursor-pointer disabled"  value="Next">
                       </div>
                     </form>
+
+                    <!-- Modal -->
+                    <div id="modalOpen" class="  ">
+
+                        <!-- Open the modal using ID.showModal() method -->
+
+                        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                          <div class="modal-box">
+                            <h3 class="font-bold text-lg">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                              <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                              </form>
+                            </div>
+                          </div>
+                        </dialog>
+                    </div>
+                    <!-- Modal -->
+
                     <div class="flex justify-between">
                       <a href="">Terms & Conditions</a>
                       <a href="">Cancellation Policy</a>
