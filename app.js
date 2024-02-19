@@ -1,3 +1,6 @@
+
+
+
 /**
  * requirement 
 
@@ -9,43 +12,44 @@
 
  */
 
-function modalOpen(){
-    let modal = document.getElementById('modalOpen');
-    modal.classList.remove('hidden');
-}
-
 /* Bus seat count */
 let initialSeatBooked = 0;
 let initialTk = 0;
 let seatMaxBook = 4 ;
-let leftSeat = 40;
 
 // seat excess 
 
-let totalSeat = document.getElementById('totalSeat');
-let  seatSongkha = totalSeat.innerText;
+let leftSeat = document.getElementById('totalSeat');
+let totalBusSeattText = leftSeat.innerText;
+let busSeatTotal = parseInt(totalBusSeattText)
+console.log(busSeatTotal, 'busSeatTotal ');
 
-console.log(seatSongkha , 'seat songkha ');
+
+// if( userClick === busSeat ){
+//     busSeatTotal--;
+// }
+// else{
+//     alert('booked')
+// }
 
 
-let busSeat = document.getElementsByClassName('bus-seat')
-
+// seat excess 
 
 // Bus seat selected 
 
 
-function choiceSeatNumaberElement(elementID){
-    let playerPress = elementID.innerText;
+function choiceSeatNumaberElement(event){
+    let playerPress = event;
     console.log('Player Press : ', playerPress);
 }
 
-
+document.addEventListener('click', choiceSeatNumaberElement)
 
 
 
 for (const singleSeat of busSeat) {
     let seatText = singleSeat.innerText;
-    console.log(seatText, 'sigle sit');
+    // console.log(seatText, 'sigle sit');
     
     singleSeat.addEventListener('click', function(){
         let seatText = singleSeat.innerText;
@@ -81,7 +85,7 @@ for (const singleSeat of busSeat) {
 
 }
 
-let total = userQuantity ;
+let total = 4 ;
 
 let discount15 = total * 0.15 ;
 let discount20 = total * 0.15 ;
