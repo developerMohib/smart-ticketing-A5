@@ -122,11 +122,11 @@
               <h2 class="text-4xl font-bold text-center my-10">Best offers for you</h2>
             </div>
             <!-- Coupon Card -->
-            <div class="lg:flex justify-around gap-10 mt-20">
+            <div class="lg:flex lg:justify-around gap-10 mt-20">
 
-              <div class="flex items-center justify-end bg-[#FFBF0F] rounded-xl w-1/2">
-                <div class="p-5 flex-1">
-                  <h2 class="text-4xl font-extrabold ">15% OFF</h2>
+              <div class="flex items-center justify-end bg-[#FFBF0F] rounded-xl lg:w-1/2">
+                <div class="p-5 lg:flex-1">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold ">15% OFF</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                   <p class="text-sm"> by january 2024</p>
                 </div>
@@ -134,14 +134,14 @@
                   <img src="./images/cupon-devider.png" alt="">
                 </div>
                 <div class=" p-5 rounded-xl">
-                  <h2 class="text-4xl font-extrabold ">15% OFF</h2>
+                  <h2 class="lg:text-4xl text-2xl font-extrabold">15% OFF</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                 </div>
               </div>
               
-              <div class=" flex items-center mt-10 lg:mt-0 rounded-xl w-1/2 bg-[#F78C9C]">
-                <div class="p-5 flex-1">
-                  <h2 class="text-4xl font-extrabold ">15% OFF</h2>
+              <div class=" flex items-center mt-10 lg:mt-0 rounded-xl lg:w-1/2 bg-[#F78C9C]">
+                <div class="p-5 lg:flex-1">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold">15% OFF</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                   <p class="text-sm"> by january 2024</p>
                 </div>
@@ -149,7 +149,7 @@
                   <img src="./images/cupon-devider.png" alt="">
                 </div>
                 <div class="p-5 rounded-xl ">
-                  <h2 class="text-4xl font-extrabold ">couple 20</h2>
+                  <h2 class="lg:text-4xl text-2xl font-extrabold">couple 20</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                 </div>
               </div>
@@ -164,17 +164,17 @@
         <section id="#tickets" class="border-t-2 rounded-3xl border-secColor my-10">
           <div class="container">
 
-              <div class="w-3/5 mx-auto">
+              <div class=" lg:w-3/5 mx-auto">
                 <h2 class="text-4xl font-bold text-center my-10">Matha-Moda Paribahan</h2>
                 <p class="mb-5 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
               </div>
 
 
 
-              <div class=" grid grid-cols-5 items-center rounded-xl bg-priColor p-10">
+              <div class=" lg:grid lg:grid-cols-5 items-center rounded-xl bg-priColor p-10">
 
                 <div class="col-span-3 ">
-                  <div class="flex justify-between items-center">
+                  <div class="lg:flex justify-between items-center">
                     <div class="card card-side p-0 ">
                       <figure><img src="./images/bus-logo.png" alt="People"/></figure>
                       <div class="card-body">
@@ -197,15 +197,15 @@
                       <p>Deperture Time</p>
                       <p class="">9:00</p>
                     </div>
-                    <div class="col-start-1 col-end-7 flex justify-between">
+                    <div class="col-start-1 col-end-7 lg:flex justify-between">
                       <a href="" class="btn btn-active btn-ghost">Boading point - Laximpur</a>
-                      <a href="" class="btn btn-active btn-ghost">Droping point - Bagora</a>
+                      <a href="" class="btn btn-active btn-ghost lg:my-0 my-3">Droping point - Bagora</a>
                       <a href="" class="btn btn-active btn-ghost">Est. Time - 11 hour</a>
                     </div>
                   </div>
                 </div>
 
-                <div>
+                <div class="hidden lg:block lg:bg-none ">
                   <img src="./images/info-devider.png" alt="">
                 </div>
                 <div class="">
@@ -221,7 +221,7 @@
 
               <!-- Select Your Seat -->
 
-                <div class="grid grid-cols-7 gap-10 mt-10 bg-[#edeeee] p-5">
+                <div class="lg:grid lg:grid-cols-7 gap-10 mt-10 bg-[#edeeee] p-5">
 
                   <div class="left-side-obBus col-span-4 p-4 border-r-2 border-dashed border-red-300">
                     <h1 class="text-2xl font-bold ">Select Your Seat</h1>
@@ -234,33 +234,47 @@
                     </div>
                   
                     <div>
-                      <div class="flex items-center gap-5 flex-grow mt-10">
-                        <p class="font-semibold text-2xl">A</p>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ">A1</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl mr-5" >A2</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ml-5" >A3</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl" >A4</button>
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow mt-10">
+                        <p class="font-semibold lg:text-2xl text-xl">A</p>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">A1</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >A2</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >A3</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl" >A4</button>
                       </div>
-                      <div class="flex items-center gap-5 flex-grow my-5">
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">B</p>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ">B1</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl mr-5" >B2</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ml-5" >B3</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl" >B4</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">B1</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >B2</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >B3</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >B4</button>
                       </div>
-                      <div class="flex items-center gap-5 flex-grow my-5">
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">C</p>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ">C1</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl mr-5" >C2</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ml-5" >C3</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl" >C4</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">C1</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >C2</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >C3</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >C4</button>
                       </div>
-                      <div class="flex items-center gap-5 flex-grow my-5">
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
                         <p class="font-semibold text-2xl">D</p>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ">D1</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl mr-5" >D2</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl ml-5" >D3</button>
-                        <button class="btn bg-slate-400 px-12 py-3 text-xl" >D4</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl ">D1</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >D2</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >D3</button>
+                        <button class="btn bg-slate-400 lg:px-12 lg:py-3 text-xl" >D4</button>
+                      </div>
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5 ">
+                        <p class="font-semibold text-2xl">E</p>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">E1</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >E2</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >E3</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-1" >E4</button>
+                      </div>
+                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
+                        <p class="font-semibold text-2xl">F</p>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">F1</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >F2</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >F3</button>
+                        <button class="btn bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1" >F4</button>
                       </div>
                     </div>
                   </div>
@@ -284,11 +298,34 @@
                       <h2> BDT <span>500</span> </h2>
                     </div>
 
-                    <div class=" w-4/5">
-                      <div class="join ">
-                        <input class="input input-bordered join-item" placeholder="Email"/>
-                        <button class="btn bg-ternaryColor join-item ">Subscribe</button>
+                    <div class="">
+                      <div class=" relative">
+                        <!-- <input class="input input-bordered join-item" placeholder="Email"/>
+                        <button class="btn bg-ternaryColor join-item ">Subscribe</button> -->
+                        <input type="text" placeholder="Have a coupon? " class="input w-full" />
+                        <input type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Next">
                       </div>
+                    </div>
+                    <form action="" class="form-control" >
+                      <div class="my-3">
+                        <label for="name">Passenger Name</label> <br>
+                        <input required type="text" class="input w-full " placeholder="Name" name="name" id="">
+                      </div>
+                      <div class="my-3">
+                        <label for="number">Phone Number</label><br>
+                        <input required type="number" class="input w-full " placeholder="Number" name="number" id="">
+                      </div>
+                      <div class="my-3">
+                        <label for="Email">Email</label><br>
+                        <input type="email" class="input w-full " placeholder="Email" name="Email" id="">
+                      </div>
+                      <div class="my-3">
+                        <input type="submit" class="input w-full bg-ternaryColor font-bold cursor-pointer"  value="Next">
+                      </div>
+                    </form>
+                    <div class="flex justify-between">
+                      <a href="">Terms & Conditions</a>
+                      <a href="">Cancellation Policy</a>
                     </div>
                   </div>
 
@@ -301,15 +338,15 @@
     </main>
 
     <footer class="p-10 text-neutral-content bg-titleColor">
-      <div class="footer-top flex justify-between">
+      <div class="footer-top lg:flex justify-between">
         <div class="left-side">
-          <h2 class="text-3xl font-bold">MathaModa Paribahan</h2>
+          <h2 class="lg:text-3xl text-xl font-bold">MathaModa Paribahan</h2>
           <!-- <p class="text-priColor" >MathaModa Paribahan Ltd.<br>Providing reliable tech since 1992</p> -->
           <p class="text-priColor" >P-Ticket is a digital platform to make your <br> daily commuting better.</p>
         </div>
         <div class="right-side">
           <h6 class="footer-title text-priColor">Download Our Lengur App</h6> 
-          <div class="grid grid-flow-col gap-4">
+          <div class="grid grid-flow-col lg:gap-4">
             <!-- <a href=""> <img src="./images/playstore.png" alt=""> </a> -->
             <div class="card card-side p-0 ">
               <figure><img src="./images/playstore.png" alt="People"/></figure>
@@ -326,7 +363,7 @@
         <div>
           <p class="text-priColor sm:mb-5" >Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
         </div>
-        <div class=" ">
+        <div class=" lg:mt-0 mt-5">
           <a class="mx-3 p-3" href="">Return & refund policy</a>
           <a class="mx-3 p-3" href="">Terms & Conditions</a>
           <a class="mx-3 p-3" href="">Privacy Policy</a>
