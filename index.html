@@ -284,29 +284,40 @@
 
                     <!-- top heading start-->
                     <div class="flex justify-between mt-3">
-                      <h2>seat <sup>2</sup> </h2>
+                      <h2>seat <sup id="seat-book">0</sup> </h2>
                       <h2>class </h2>
                       <h2>Price</h2>
                     </div>
                     <!-- top heading end-->
 
-                    <div id="" class="flex justify-between my-5 border-dashed border-b-2 border-gray-400 ">
-                      <h2 id="choiceSeatName"> <span>seat </span> </h2>
-                      <h2> Economy </h2>
-                      <h2> <span>500</span> </h2>
+                    <div id="choiceSeatName" class="flex justify-between my-5 border-dashed border-b-2 border-gray-400 ">
+                      <div id="seat-name">  </div>
+                      <div id="economy">  </div>
+                      <div id="seatVara"> </div>
                     </div>
 
-                    <div class="flex justify-between my-5 ">
-                      <h2> Total Price </h2>
-                      <h2> BDT <span>500</span> </h2>
-                    </div>
+                      <!-- total price -->
+                      <div class="flex justify-between mb-3 font-medium">
+                      <p>Total Price</p>
+                      <p>BDT <span id="total-price">0</span></p>
+                      </div>
+                      <!-- discount section -->
+                      <div id="discount-container" class="flex justify-between mb-3 font-medium">
+
+                      </div>
 
                     <div class="disabled:">
-                      <div class=" relative">
-                        <input type="text" placeholder="Have a coupon? " class="input w-full" />
-                        <input type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Coupon">
+                      <div id="input-container" class=" relative">
+                        <input  id="input-field" type="text" placeholder="Have a coupon? " class="input w-full" />
+                        <input id="couponbtn" type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Coupon">
                       </div>
+                      <!-- grand total price -->
+                        <div class="flex justify-between mt-3 font-medium">
+                          <p>Grand Total</p>
+                          <p>BDT <span id="grand-total">0</span></p>
+                          </div>
                     </div>
+
                     <form class="form-control" >
                       <div class="my-3">
                         <label for="name">Passenger Name</label> <br>
