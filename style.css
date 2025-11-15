@@ -21,3 +21,98 @@ a{
 .bigDisplayMenu li a{
     font-size: 17px;
 }
+
+
+/* New Section Styles */
+.destination-card {
+    transition: all 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Stats animation */
+.stat {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Rating stars */
+.rating-stars {
+    color: #FFD700;
+}
+
+/* Gradient backgrounds for destination cards */
+.destination-gradient-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.destination-gradient-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.destination-gradient-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.destination-gradient-4 {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .destination-card .card-body {
+        padding: 1rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 1rem;
+    }
+    
+    .stats {
+        display: block;
+    }
+    
+    .stat {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animation for feature icons */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.feature-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.feature-card:hover .feature-icon {
+    animation: none;
+    transform: scale(1.1);
+}

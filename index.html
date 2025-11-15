@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mohibullah Mohim, mohib, mohim">
     <title>Smart Ticketing - Programming Hero Prahibahan</title>
-    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./style.css">
 
-    <!-- DaisyUl and Tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Theme Primary Requirement -->
     <script>
       tailwind.config = {
         theme: {
@@ -26,7 +23,7 @@
               'priColor': '#fff',
               'titleColor': '#030712',
               'secColor': '#21e802',
-              'ternaryColor': '#1DD100', //bg-[#21e802B3]
+              'ternaryColor': '#1DD100',
             }
           }
         }
@@ -35,25 +32,23 @@
 
 </head>
 <body>
-    <!------------ Heading Section ---------->
-    <header>
-        <div class="container">
-            <div class="navbar bg-base-100">
+    <header class="py-4">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
 
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <!-- keep wait -->
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-white">
                         <li> <a class="" href="">Home</a> </li>
                         <li> <a href="">About</a> </li>
                         <li> <a href="">Destination</a> </li>
                         <li> <a href="">Search</a> </li>
                     </ul>
                   </div>
-                  <a href="" class="lg:font-bold text-titleColor text-[18px] font-extrabold lg:text-3xl"> Matha Paribahan </a>
+                  <a href="" class="lg:font-bold text-titleColor text-[18px] font-extrabold lg:text-3xl text-white"> Matha Paribahan </a>
                 </div>
 
                 <div class="navbar-center hidden lg:flex">
@@ -66,7 +61,7 @@
                 </div>
 
                 <div class="navbar-end">
-                  <a href="#" class="btn text-secColor bg-[#e8ffe5] hover:bg-[#21e802f6] hover:border-[#21e802f6] hover:text-priColor border-2 border-ternaryColor font-bold text-2xl">Bus <span><img src="./images/bus-icon.png" alt=""></span> </a>
+                  <a href="#" class="btn text-secColor bg-[#e8ffe5] hover:bg-[#21e802f6] hover:border-[#21e802f6] hover:text-priColor border-2 border-ternaryColor font-bold lg:text-xl text-lg">Bus <span><img src="./images/bus-icon.png" alt=""></span> </a>
                 </div>
               </div>
         </div>
@@ -74,298 +69,522 @@
 
     <main>
         <section>
-            <div class="container ">
-                <div class="hero min-h-screen rounded-[20px]" style="background-image: url(./images/banner.png);">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="hero min-h-[60vh] lg:min-h-screen rounded-[20px]" style="background-image: url(./images/banner.png); background-position: center; background-size: cover;">
                     <div class="hero-overlay rounded-[20px] bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content">
-                      <div class="w-4/5 lg:w-3/5 mx-auto">
-                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">End-to-End Travel with <br> <span>Matha Paribahan</span> </h1>
+                    <div class="hero-content text-center text-neutral-content p-4">
+                      <div class="w-full lg:w-3/5 mx-auto">
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold text-white">End-to-End Travel with <br> <span>Matha Paribahan</span> </h1>
                         <p class="mb-5 text-priColor">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                         <a href="#tickets" class="btn bg-secColor text-priColor border-none hover:bg-ternaryColor" >Buy Tickets</a>
                       </div>
                     </div>
                   </div>
 
-                <!-- Card Part -->
-                <div class="myCard lg:flex justify-evenly lg:relative bottom-14" >
-                  <!-- Card 1 -->
-                  <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor">
-                    <figure><img src="./images/people.png" alt="People"/></figure>
-                    <div class="card-body">
-                      <h2 class="card-title font-bold lg:text-4xl text-3xl">500K+</h2>
-                      <p>Registared User.</p>
+                <div class="myCard lg:flex justify-evenly lg:mt-[-56px] relative z-10 p-4 lg:p-0" >
+                    <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor w-full lg:w-[32%]">
+                      <figure><img src="./images/people.png" alt="People"/></figure>
+                      <div class="card-body p-4">
+                        <h2 class="card-title font-bold lg:text-4xl text-3xl text-slate-800">500K+</h2>
+                        <p>Registared User.</p>
+                      </div>
                     </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor">
-                    <figure><img src="./images/ticket-cupon.png" alt="People"/></figure>
-                    <div class="card-body">
-                      <h2 class="card-title font-bold lg:text-4xl text-3xl">1.7 Lacks </h2>
-                      <p>Ticket Sold</p>
+                    <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor w-full lg:w-[32%]">
+                      <figure><img src="./images/ticket-cupon.png" alt="People"/></figure>
+                      <div class="card-body p-4">
+                        <h2 class="card-title font-bold lg:text-4xl text-3xl text-slate-800">1.7 Lacks </h2>
+                        <p>Ticket Sold</p>
+                      </div>
                     </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor">
-                    <figure><img src="./images/stoppage.png" alt="People"/></figure>
-                    <div class="card-body">
-                      <h2 class="card-title font-bold lg:text-4xl text-3xl">80K+</h2>
-                      <p>Rental Partners</p>
+                    <div class="card card-side shadow-xl border-b-2 border-secColor px-7 bg-priColor w-full lg:w-[32%]">
+                      <figure><img src="./images/stoppage.png" alt="People"/></figure>
+                      <div class="card-body p-4">
+                        <h2 class="card-title font-bold lg:text-4xl text-3xl text-slate-800">80K+</h2>
+                        <p>Rental Partners</p>
+                      </div>
                     </div>
-                  </div>
                 </div>
             </div>
         </section>
 
         <section class="my-10">
-          <div class="container my-5">
+          <div class="max-w-screen-xl mx-auto px-4 my-5">
             <div>
-              <h2 class="text-4xl font-bold text-center my-10">Best offers for you</h2>
+              <h2 class="text-4xl font-bold text-center my-10 text-white">Best offers for you</h2>
             </div>
-            <!-- Coupon Card -->
-            <div class="lg:flex lg:justify-around gap-10 mt-20">
+            <div class="lg:flex lg:justify-around gap-10 mt-10 lg:mt-20">
 
-              <div class="flex items-center justify-end bg-[#FFBF0F] rounded-xl lg:w-1/2">
-                <div class="p-5 lg:flex-1">
-                  <h2 class="lg:text-4xl text-2xl font-extrabold ">15% OFF</h2>
+              <div class="flex items-center justify-between bg-[#FFBF0F] rounded-xl w-full lg:w-1/2 p-3 my-5 lg:my-0">
+                <div class="p-2 lg:flex-1">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold text-slate-800">15% OFF</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                   <p class="text-sm"> by january 2024</p>
                 </div>
-                <div>
+                <div class="hidden sm:block">
                   <img src="./images/cupon-devider.png" alt="">
                 </div>
-                <div class=" p-5 rounded-xl">
-                  <h2 class="lg:text-4xl text-2xl font-extrabold">NEW15</h2>
+                <div class="p-2 rounded-xl text-center">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold text-slate-800">NEW15</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >Coupon Code</p>
                 </div>
               </div>
-              
-              <div class=" flex items-center mt-10 lg:mt-0 rounded-xl lg:w-1/2 bg-[#F78C9C]">
-                <div class="p-5 lg:flex-1">
-                  <h2 class="lg:text-4xl text-2xl font-extrabold">20% OFF</h2>
+                
+              <div class=" flex items-center justify-between mt-10 lg:mt-0 rounded-xl w-full lg:w-1/2 bg-[#F78C9C] p-3 my-5 lg:my-0">
+                <div class="p-2 lg:flex-1">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold text-slate-800">20% OFF</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >On Your Next Purchase </p>
                   <p class="text-sm"> by january 2024</p>
                 </div>
-                <div>
+                 <div class="hidden sm:block">
                   <img src="./images/cupon-devider.png" alt="">
                 </div>
-                <div class="p-5 rounded-xl ">
-                  <h2 class="lg:text-4xl text-2xl font-extrabold">couple20</h2>
+                <div class="p-2 rounded-xl text-center">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold text-slate-800">couple20</h2>
                   <p class="text-[#030712CC] font-semibold my-2" >Coupon Code</p>
                 </div>
               </div>
 
             </div>
-            <div class="text-center mt-16">
-              <button class="btn btn-outline hover:bg-secColor hover:border-secColor">See All Offers</button>
+            <div class="text-center mt-10 lg:mt-16">
+              <button class="btn btn-outline hover:bg-secColor hover:border-secColor border-ternaryColor text-ternaryColor">See All Offers</button>
             </div>
           </div>
         </section>
 
-        <section id="tickets" class="border-t-2 rounded-3xl border-secColor my-10">
-          <div class="container">
+        <section id="tickets" class="border-t-2 rounded-3xl border-secColor my-10 bg-priColor">
+          <div class="max-w-screen-xl mx-auto px-4">
 
-              <div class=" lg:w-3/5 mx-auto">
-                <h2 class="text-4xl font-bold text-center my-10">Matha-Moda Paribahan</h2>
-                <p class=" text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+              <div class="w-full lg:w-3/5 mx-auto py-10">
+                <h2 class="text-4xl font-bold text-center my-10 text-titleColor">Matha-Moda Paribahan</h2>
+                <p class="text-titleColor text-opacity-70 pb-5 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
               </div>
 
-
-
-              <div class=" lg:grid lg:grid-cols-5 items-center rounded-xl bg-priColor p-10">
+              <div class="w-full lg:grid lg:grid-cols-5 items-center rounded-t-xl bg-priColor p-4 lg:p-10 border-2 border-gray-300">
 
                 <div class="col-span-3 ">
-                  <div class="lg:flex justify-between items-center">
-                    <div class="card card-side p-0 ">
+                  <div class="flex justify-between items-center flex-wrap">
+                    <div class="card card-side p-0 flex items-center mb-4 lg:mb-0">
                       <figure><img src="./images/bus-logo.png" alt="People"/></figure>
-                      <div class="card-body">
-                        <h2 class="card-title font-bold text-3xl">MathaModa Paribahan</h2>
-                        <p>Coach-009-WEB ! AC_Business</p>
+                      <div class="card-body p-2 lg:p-4">
+                        <h2 class="card-title font-bold text-xl lg:text-3xl text-slate-800">MathaModa Paribahan</h2>
+                        <p class="text-slate-800 text-sm">Coach-009-WEB ! AC_Business</p>
                       </div>
                     </div>
                     <div class="total-sit">
-                      <p class="text-priColor p-3 text-xl rounded-lg bg-[#6ee15f]"> <span> <img class="inline-block" src="./images/seat-gray.png" alt=""> </span> <span id="totalSeat">40</span> sit left</p>
+                      <p class="text-priColor p-3 text-lg rounded-lg bg-[#6ee15f]"> <span> <img class="inline-block" src="./images/seat-gray.png" alt=""> </span> <span id="totalSeat">40</span> sit left</p>
                     </div>
                   </div>
 
-                  
-                  <div class="bg-[#edeeee] p-3 rounded-lg">
-                    <div class="flex justify-between">
-                      <p>Route</p>
-                      <p class="">Dhaka - Sylhet</p>
+                  <div class="bg-[#edeeee] p-3 rounded-lg mt-4">
+                    <div class="flex justify-between border-dashed border-b-2 border-gray-300 pb-2">
+                      <p class="font-semibold">Route</p>
+                      <p class="font-medium">Dhaka - Sylhet</p>
                     </div>
-                    <div class="flex justify-between my-3">
+                    <div class="flex justify-between my-3 border-dashed border-b-2 border-gray-300 pb-2">
                       <p>Deperture Time</p>
                       <p class="">9:00</p>
                     </div>
-                    <div class="col-start-1 col-end-7 lg:flex justify-between">
-                      <a href="" class="btn btn-active btn-ghost">Boading point - Laximpur</a>
-                      <a href="" class="btn btn-active btn-ghost lg:my-0 my-3">Droping point - Bagora</a>
-                      <a href="" class="btn btn-active btn-ghost">Est. Time - 11 hour</a>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                      <a href="" class="btn btn-active btn-ghost text-slate-700 text-sm">Boading point - Laximpur</a>
+                      <a href="" class="btn btn-active btn-ghost text-slate-700 text-sm">Droping point - Bagora</a>
+                      <a href="" class="btn btn-active btn-ghost text-slate-700 text-sm">Est. Time - 11 hour</a>
                     </div>
                   </div>
                 </div>
 
-                <div class="hidden lg:block lg:bg-none ">
+                <div class="hidden lg:block">
                   <img src="./images/info-devider.png" alt="">
                 </div>
-                <div class="">
-                  <div class="">
+                <div class="col-span-1 flex flex-col items-center justify-center mt-6 lg:mt-0">
+                  <div class="mb-2">
                     <img src="./images/fare.png" alt="">
                   </div>
-                  <div class="">
+                  <div class="text-center">
                     <p class="text-3xl font-bold text-titleColor" > <span>550</span> Taka</p>
-                    <p class="" > per seat</p>
+                    <p class="text-sm" > per seat</p>
                   </div>
                 </div>
               </div>  
 
-              <!-- Select Your Seat -->
+              <div class="w-full lg:grid lg:grid-cols-7 gap-6 bg-white p-4 lg:p-5 border-x-2 border-b-2 border-gray-300 rounded-b-xl">
 
-                <div class="lg:grid lg:grid-cols-7 gap-10 bg-[#edeeee] p-5">
-
-                  <div class="left-side-obBus col-span-4 p-4 border-r-2 border-dashed border-red-300">
-                    <h1 class="text-2xl font-bold ">Select Your Seat</h1>
-                    <div class="flex justify-between my-3 border-dashed border-y-2 border-gray-400 ">
-                      <h2 class="text-2xl ">Available</h2>
-                      <p> <img class="inline-block" src="./images/bus-icon.png" alt=""> Select</p>
+                <div class="left-side-obBus col-span-4 p-4 lg:border-r-2 border-dashed border-red-300">
+                  <h1 class="text-2xl font-bold text-slate-800">Select Your Seat</h1>
+                  <div class="flex justify-between my-3 border-dashed border-y-2 border-gray-400 text-slate-800 py-3">
+                    <h2 class="text-lg lg:text-2xl">Available</h2>
+                    <p> <img class="inline-block w-6 h-6" src="./images/bus-icon.png" alt=""> Select</p>
+                  </div>
+                  <div class="flex justify-end my-5">  
+                    <img class="bg-gray-300 hover:bg-gray-300 px-5 py-3 rounded-lg" src="./images/wheel.png" alt="Steering Wheel"> 
+                  </div>
+                    
+                  <div class="seat-layout">
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 mt-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">A</p>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white">A1</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >A2</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >A3</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >A4</button>
                     </div>
-                    <div class="flex justify-end"> 
-                      <img class=" bg-gray-300 hover:bg-gray-300 px-5 py-3 rounded-lg" src="./images/wheel.png" alt=""> 
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 my-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">B</p>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white ">B1</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >B2</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >B3</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >B4</button>
                     </div>
-                  
-                    <div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow mt-10">
-                        <p class="font-semibold lg:text-2xl text-xl">A</p>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl ">A1</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >A2</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >A3</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl" >A4</button>
-                      </div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
-                        <p class="font-semibold text-2xl">B</p>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl ">B1</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >B2</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >B3</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl" >B4</button>
-                      </div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
-                        <p class="font-semibold text-2xl">C</p>
-                        <button id="C1" class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl ">C1</button>
-                        <button id="C2" class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >C2</button>
-                        <button id="C3" class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >C3</button>
-                        <button id="C3" class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl" >C4</button>
-                      </div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
-                        <p class="font-semibold text-2xl">D</p>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl ">D1</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:mr-5" >D2</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl lg:ml-5" >D3</button>
-                        <button class="btn bus-seat bg-slate-400 lg:px-12 lg:py-3 text-xl" >D4</button>
-                      </div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5 ">
-                        <p class="font-semibold text-2xl">E</p>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">E1</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >E2</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >E3</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-1" >E4</button>
-                      </div>
-                      <div class="flex items-center lg:gap-5 gap-2 flex-grow my-5">
-                        <p class="font-semibold text-2xl">F</p>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1">F1</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl lg:mr-5" >F2</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl lg:ml-6" >F3</button>
-                        <button class="btn bus-seat bg-slate-400  lg:px-12  lg:py-3 text-xl ml-1" >F4</button>
-                      </div>
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 my-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">C</p>
+                      <button id="C1" class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white ">C1</button>
+                      <button id="C2" class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >C2</button>
+                      <button id="C3" class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >C3</button>
+                      <button id="C4" class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >C4</button>
+                    </div>
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 my-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">D</p>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white ">D1</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >D2</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >D3</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >D4</button>
+                    </div>
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 my-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">E</p>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white ">E1</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >E2</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >E3</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >E4</button>
+                    </div>
+                    <div class="flex items-center justify-between lg:gap-5 gap-2 my-5">
+                      <p class="font-semibold lg:text-2xl text-xl w-6">F</p>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white ">F1</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:mr-5" >F2</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white lg:ml-5" >F3</button>
+                      <button class="btn bus-seat bg-slate-200 w-1/6 text-sm lg:text-xl text-black hover:text-white" >F4</button>
                     </div>
                   </div>
-                
-                  <div id="seatPriceContainer" class="right-side-obBus col-span-3 ">
-                    <h1 class="text-2xl text-center mb-5 font-bold border-dashed border-b-2 border-gray-400">Select Your Seat</h1>
+                </div>
+              
+                <div id="seatPriceContainer" class="right-side-obBus col-span-3 mt-8 lg:mt-0 p-4">
+                  <h1 class="text-2xl text-center mb-5 font-bold border-dashed border-b-2 border-gray-400 text-slate-800 pb-3">Select Your Seat</h1>
 
-                    <!-- top heading start-->
-                    <div class="flex justify-between mt-3">
-                      <h2>seat <sup id="seat-book">0</sup> </h2>
-                      <h2>class </h2>
-                      <h2>Price</h2>
-                    </div>
-                    <!-- top heading end-->
+                  <div class="flex justify-between mt-3">
+                    <h2 class="text-slate-700">Seat <sup id="seat-book">0</sup> </h2>
+                    <h2 class="text-slate-700">Class </h2>
+                    <h2 class="text-slate-700">Price</h2>
+                  </div>
+                  <div id="choiceSeatName" class="flex justify-between my-5 border-dashed border-b-2 border-gray-400 pb-3">
+                    <div id="seat-name" class="flex flex-col gap-2">  </div>
+                    <div id="economy" class="flex flex-col gap-2">  </div>
+                    <div id="seatVara" class="flex flex-col gap-2"> </div>
+                  </div>
 
-                    <div id="choiceSeatName" class="flex justify-between my-5 border-dashed border-b-2 border-gray-400 ">
-                      <div id="seat-name">  </div>
-                      <div id="economy">  </div>
-                      <div id="seatVara"> </div>
-                    </div>
-
-                      <!-- total price -->
-                      <div class="flex justify-between mb-3 font-medium">
+                    <div class="flex justify-between mb-3 font-medium">
                       <p>Total Price</p>
                       <p>BDT <span id="total-price">0</span></p>
-                      </div>
-                      <!-- discount section -->
-                      <div id="discount-container" class="flex justify-between mb-3 font-medium">
+                    </div>
+                    <div id="discount-container" class="flex justify-between mb-3 font-medium">
 
-                      </div>
-
-                    <div class="disabled:">
-                      <div id="input-container" class=" relative">
-                        <input  id="input-field" type="text" placeholder="Have a coupon? " class="input w-full" />
-                        <input id="couponbtn" type="submit" class="input bg-ternaryColor font-bold cursor-pointer absolute right-0 px-10"  value="Coupon">
-                      </div>
-                      <!-- grand total price -->
-                        <div class="flex justify-between mt-3 font-medium">
-                          <p>Grand Total</p>
-                          <p>BDT <span id="grand-total">0</span></p>
-                          </div>
                     </div>
 
-                    <form class="form-control" >
-                      <div class="my-3">
-                        <label for="name">Passenger Name</label> <br>
-                        <input  type="text" class="input w-full " placeholder="Name" name="name" id="">
-                      </div>
-                      <div class="my-3">
-                        <label for="number">Phone Number</label><br>
-                        <input  type="number" class="input w-full " placeholder="Number" name="number" id="">
-                      </div>
-                      <div class="my-3">
-                        <label for="Email">Email</label><br>
-                        <input type="email" class="input w-full " placeholder="Email" name="Email" id="">
-                      </div>
-                      <div class="my-3">
-                        <input onclick="my_modal_5.showModal()" type="submit" class="input w-full bg-ternaryColor font-bold cursor-pointer disabled"  value="Next">
-                      </div>
-                    </form>
-
-                    <!-- Modal -->
-                    <div id="modalOpen" class="  ">
-
-                        <!-- Open the modal using ID.showModal() method -->
-
-                        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                          <div class="modal-box">
-                            <h3 class="font-bold text-lg">Congratulations</h3>
-                            <p class="py-4">You Buy A bus ticket</p>
-                            <div class="modal-action">
-                              <form method="dialog">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn">Close</button>
-                              </form>
-                            </div>
-                          </div>
-                        </dialog>
+                  <div>
+                    <div id="input-container" class=" relative my-4">
+                      <input  id="input-field" type="text" placeholder="Have a coupon? " class="input w-full border-gray-300" />
+                      <input id="couponbtn" type="submit" class="btn bg-ternaryColor font-bold cursor-pointer absolute right-0 top-0 h-full text-slate-700 px-6" value="Coupon">
                     </div>
-                    <!-- Modal -->
-
-                    <div class="flex justify-between">
-                      <a href="">Terms & Conditions</a>
-                      <a href="">Cancellation Policy</a>
-                    </div>
+                      <div class="flex justify-between mt-5 font-medium border-t-2 border-dashed border-gray-400 pt-3">
+                        <p class="text-lg font-bold">Grand Total</p>
+                        <p class="text-lg font-bold">BDT <span id="grand-total">0</span></p>
+                      </div>
                   </div>
 
+                  <form class="form-control" >
+                    <div class="my-3">
+                      <label class="text-slate-700 font-semibold" for="name">Passenger Name</label> <br>
+                      <input  type="text" class="input w-full border-gray-300 mt-2" placeholder="Name" name="name" id="passenger-name-input">
+                    </div>
+                    <div class="my-3">
+                      <label class="text-slate-700 font-semibold" for="number">Phone Number</label><br>
+                      <input  type="number" class="input w-full border-gray-300 mt-2" placeholder="Number" name="number" id="phone-number-input">
+                    </div>
+                    <div class="my-3">
+                      <label class="text-slate-700 font-semibold" for="Email">Email</label><br>
+                      <input type="email" class="input w-full border-gray-300 mt-2" placeholder="Email" name="Email" id="email-input">
+                    </div>
+                    <div class="my-5">
+                      <input onclick="my_modal_5.showModal()" type="submit" id="next-button" class="input w-full bg-ternaryColor font-bold cursor-pointer text-slate-700 disabled:opacity-50" value="Next" disabled>
+                    </div>
+                  </form>
+
+                  <div id="modalOpen">
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <div class="modal-box text-center">
+                        <img src="./images/success.png" alt="Success Icon" class="mx-auto my-4 w-20 h-20">
+                        <h3 class="font-bold text-2xl text-titleColor">SUCCESS</h3>
+                        <p class="py-4 text-gray-600">You Buy A bus ticket</p>
+                        <p class="text-gray-500">Thank you for traveling with us. We look forward to having you on board!</p>
+                        <div class="modal-action flex justify-center mt-6">
+                          <form method="dialog">
+                            <button class="btn bg-ternaryColor hover:bg-[#15b300] text-white px-10">Continue</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
+                  </div>
+                  <div class="flex justify-around text-sm mt-5 pt-3 border-t-2 border-dashed border-gray-400">
+                    <a href="" class="text-ternaryColor hover:underline">Terms & Conditions</a>
+                    <a href="" class="text-ternaryColor hover:underline">Cancellation Policy</a>
+                  </div>
                 </div>
 
+              </div>
+
+
+          </div>
+        </section>
+
+                <!-- Popular Destinations Section -->
+        <section class="py-12 bg-white">
+          <div class="container">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Popular Destinations</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">Explore the most sought-after routes across Bangladesh with comfortable and reliable bus services</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Destination 1 -->
+              <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <figure class="px-4 pt-4">
+                  <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <span class="text-6xl text-white">🏙️</span>
+                  </div>
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title text-secondary">Dhaka to Cox's Bazar</h3>
+                  <p class="text-gray-600">Experience the longest sea beach in the world</p>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="text-sm">
+                      <p class="text-gray-500">Starting from</p>
+                      <p class="text-xl font-bold text-primary">৳ 1,200</p>
+                    </div>
+                    <div class="badge badge-primary badge-lg">12h 30m</div>
+                  </div>
+                  <div class="card-actions justify-end mt-4">
+                    <button class="btn btn-sm btn-outline btn-primary">View Buses</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination 2 -->
+              <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <figure class="px-4 pt-4">
+                  <div class="w-full h-48 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center">
+                    <span class="text-6xl text-white">🌿</span>
+                  </div>
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title text-secondary">Dhaka to Sylhet</h3>
+                  <p class="text-gray-600">Discover the land of tea gardens and hills</p>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="text-sm">
+                      <p class="text-gray-500">Starting from</p>
+                      <p class="text-xl font-bold text-primary">৳ 850</p>
+                    </div>
+                    <div class="badge badge-primary badge-lg">5h 45m</div>
+                  </div>
+                  <div class="card-actions justify-end mt-4">
+                    <button class="btn btn-sm btn-outline btn-primary">View Buses</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination 3 -->
+              <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <figure class="px-4 pt-4">
+                  <div class="w-full h-48 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
+                    <span class="text-6xl text-white">⛰️</span>
+                  </div>
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title text-secondary">Dhaka to Bandarban</h3>
+                  <p class="text-gray-600">Adventure in the hills of Chittagong Hill Tracts</p>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="text-sm">
+                      <p class="text-gray-500">Starting from</p>
+                      <p class="text-xl font-bold text-primary">৳ 1,500</p>
+                    </div>
+                    <div class="badge badge-primary badge-lg">8h 15m</div>
+                  </div>
+                  <div class="card-actions justify-end mt-4">
+                    <button class="btn btn-sm btn-outline btn-primary">View Buses</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Destination 4 -->
+              <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <figure class="px-4 pt-4">
+                  <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
+                    <span class="text-6xl text-white">🏛️</span>
+                  </div>
+                </figure>
+                <div class="card-body">
+                  <h3 class="card-title text-secondary">Dhaka to Khulna</h3>
+                  <p class="text-gray-600">Gateway to the Sundarbans mangrove forest</p>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="text-sm">
+                      <p class="text-gray-500">Starting from</p>
+                      <p class="text-xl font-bold text-primary">৳ 700</p>
+                    </div>
+                    <div class="badge badge-primary badge-lg">6h 30m</div>
+                  </div>
+                  <div class="card-actions justify-end mt-4">
+                    <button class="btn btn-sm btn-outline btn-primary">View Buses</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-12">
+              <button class="btn btn-primary text-white px-8 py-3 text-lg">
+                Explore All Destinations
+                <span class="ml-2">→</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-12 bg-gradient-to-br from-primary/5 to-primary/10">
+          <div class="container">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Why Choose Matha Paribahan?</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">We are committed to providing the best travel experience for our passengers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Feature 1 -->
+              <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">🛡️</span>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-2">Safe & Secure</h3>
+                <p class="text-gray-600">Regular vehicle maintenance and trained drivers ensure your safety</p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">⏰</span>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-2">On Time Service</h3>
+                <p class="text-gray-600">95% of our buses arrive within 15 minutes of scheduled time</p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">💰</span>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-2">Best Price</h3>
+                <p class="text-gray-600">Competitive pricing with no hidden charges</p>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl">📱</span>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-2">Easy Booking</h3>
+                <p class="text-gray-600">Simple and fast online booking with instant confirmation</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-12 bg-white">
+          <div class="container">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Passengers Say</h2>
+              <p class="text-gray-600 max-w-2xl mx-auto">Hear from thousands of satisfied customers who travel with us regularly</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Testimonial 1 -->
+              <div class="card bg-base-100 shadow-lg border border-gray-100">
+                <div class="card-body">
+                  <div class="flex items-center mb-4">
+                    <div class="avatar placeholder">
+                      <div class="bg-primary text-white rounded-full w-12">
+                        <span class="text-lg">AR</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="font-bold text-secondary">Ayesha Rahman</h4>
+                      <div class="flex text-yellow-400">
+                        ★★★★★
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 italic">
+                    "I travel frequently from Dhaka to Sylhet for work. Matha Paribahan has never disappointed me. Comfortable seats and always on time!"
+                  </p>
+                  <div class="mt-4 text-sm text-gray-500">
+                    Dhaka to Sylhet Route
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="card bg-base-100 shadow-lg border border-gray-100">
+                <div class="card-body">
+                  <div class="flex items-center mb-4">
+                    <div class="avatar placeholder">
+                      <div class="bg-primary text-white rounded-full w-12">
+                        <span class="text-lg">RS</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="font-bold text-secondary">Rahim Sheikh</h4>
+                      <div class="flex text-yellow-400">
+                        ★★★★★
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 italic">
+                    "The online booking system is so easy to use. Got my tickets instantly and the bus was exactly as shown in the photos. Great service!"
+                  </p>
+                  <div class="mt-4 text-sm text-gray-500">
+                    Dhaka to Cox's Bazar Route
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="card bg-base-100 shadow-lg border border-gray-100">
+                <div class="card-body">
+                  <div class="flex items-center mb-4">
+                    <div class="avatar placeholder">
+                      <div class="bg-primary text-white rounded-full w-12">
+                        <span class="text-lg">FI</span>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="font-bold text-secondary">Fatima Islam</h4>
+                      <div class="flex text-yellow-400">
+                        ★★★★☆
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 italic">
+                    "Affordable prices and good service. The drivers are professional and the buses are clean. My go-to choice for family trips."
+                  </p>
+                  <div class="mt-4 text-sm text-gray-500">
+                    Dhaka to Chittagong Route
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </section>
@@ -373,39 +592,37 @@
     </main>
 
     <footer class="p-10 text-neutral-content bg-titleColor">
-      <div class="footer-top lg:flex justify-between">
-        <div class="left-side">
-          <h2 class="lg:text-3xl text-xl font-bold">MathaModa Paribahan</h2>
-          <!-- <p class="text-priColor" >MathaModa Paribahan Ltd.<br>Providing reliable tech since 1992</p> -->
-          <p class="text-priColor" >P-Ticket is a digital platform to make your <br> daily commuting better.</p>
-        </div>
-        <div class="right-side">
-          <h6 class="footer-title text-priColor">Download Our Lengur App</h6> 
-          <div class="grid grid-flow-col lg:gap-4">
-            <!-- <a href=""> <img src="./images/playstore.png" alt=""> </a> -->
-            <div class="card card-side p-0 ">
-              <figure><img src="./images/playstore.png" alt="People"/></figure>
-              <div class="card-body">
-                <p class="text-priColor" >Get it on</p>
-                <h2 class="card-title font-bold text-xl">Google PlayStore</h2>
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="footer-top lg:flex justify-between border-b-2 border-dashed border-sky-500 pb-10">
+          <div class="left-side mb-8 lg:mb-0">
+            <h2 class="lg:text-3xl text-xl font-bold">MathaModa Paribahan</h2>
+            <p class="text-priColor text-sm mt-2" >P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+          </div>
+          <div class="right-side">
+            <h6 class="footer-title text-priColor">Download Our App</h6> 
+            <div class="grid grid-flow-col gap-4 mt-3">
+              <div class="card card-side p-0 border border-white/50 hover:border-ternaryColor transition duration-300">
+                <figure class="p-3"><img src="./images/playstore.png" alt="Google Playstore"/></figure>
+                <div class="card-body p-2">
+                  <p class="text-priColor text-xs" >Get it on</p>
+                  <h2 class="card-title font-bold text-sm text-white">Google Play</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="border-t-2 border-dashed border-sky-500 lg:flex lg:justify-between mt-10 py-5 flex flex-col sm:flex-row sm:justify-between">
+          <div>
+            <p class="text-priColor text-sm text-center sm:text-left mb-3 lg:mb-0" >Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          </div>
+          <div class="text-center sm:text-right">
+            <a class="mx-1 p-1 text-sm text-white/80 hover:text-ternaryColor transition duration-300" href="">Return & refund policy</a>
+            <a class="mx-1 p-1 text-sm text-white/80 hover:text-ternaryColor transition duration-300" href="">Terms & Conditions</a>
+            <a class="mx-1 p-1 text-sm text-white/80 hover:text-ternaryColor transition duration-300" href="">Privacy Policy</a>
+          </div>
+        </div>
       </div>
-      <!-- Footer Bottom -->
-      <div class="border-t-2 border-dashed border-sky-500 lg:flex lg:justify-between mt-10 py-5 sm:text-center">
-        <div>
-          <p class="text-priColor sm:mb-5" >Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
-        </div>
-        <div class=" lg:mt-0 mt-5">
-          <a class="mx-3 p-3" href="">Return & refund policy</a>
-          <a class="mx-3 p-3" href="">Terms & Conditions</a>
-          <a class="mx-3 p-3" href="">Privacy Policy</a>
-        </div>
-      </footer>
-    </div>
-    <!-- <script src="./app.js"></script> -->
+    </footer>
     <script src="./utility.js"></script>
 </body>
 </html>
